@@ -10,7 +10,7 @@ TestPallette ← [Red Orange Yellow Green Cyan Blue Purple Magenta Black White]
 Kenochoric ← ÷255[Black Black [45 0 83] [45 0 83] [134 61 195] [134 61 195] [181 127 213] [134 61 195] [134 61 195] [45 0 83] [45 0 83] Black Black]
 # A very neat gender term for genders fitting the "Liminal Vibe" Visit https://lgbtqia.wiki/wiki/Kenochoric for more details
 
-x ← ⇌ [Red Black Blue]
+x ← ⇌ TestPallette
 # Pallette
 
 Xl ← ⧻ x
