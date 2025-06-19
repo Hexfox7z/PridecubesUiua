@@ -9,6 +9,8 @@ TestPallette ← [Red Orange Yellow Green Cyan Blue Purple Magenta Black White]
 # Not a flag, tests how well colors can be seen with many units in an array
 Kenochoric ← ÷255[Black Black [45 0 83] [45 0 83] [134 61 195] [134 61 195] [181 127 213] [134 61 195] [134 61 195] [45 0 83] [45 0 83] Black Black]
 # A very neat gender term for genders fitting the "Liminal Vibe" Visit https://lgbtqia.wiki/wiki/Kenochoric for more details
+IsFlag ← 0
+# Boolean, chooses if cube of flag is made; 0 = cube
 
 x ← ⇌ TestPallette
 # Pallette
@@ -18,9 +20,10 @@ Xl ← ⧻ x
 
 ≡⊂ x 1
 # Sets Alpha to one (Makes opaque)
-
-⤸2↯[Xl Xl Xl 4]
-# Creates a cube as large as the pallete length
-
+IsFlag
+⨬(↯[Xl Xl Xl 4]|↯[1 ⌈×÷3 5Xl Xl 4])
+# If IsFlag == 0, create a cube with side lengths Xl
+# If IsFlag == 1, create a rectangle that is Xl units tall and 5/3 of Xl units long
+⤸2
 voxels Scale: ÷ Xl×ImgScale 50
 # Makes all cubes the same size
