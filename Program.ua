@@ -28,7 +28,7 @@ Xl ← ⧻ x
 ≡⊂ x 1
 # Sets Alpha to one (Makes opaque)
 IsFlag
-⨬(↯[Xl Xl Xl 4]|↯[1 ⌈×÷3 5Xl Xl 4])
+⨬(↯[Xl Xl Xl 4]|↯[1 ⁅×÷3 5Xl Xl 4])
 # If IsFlag == 0, create a cube with side lengths Xl
 # If IsFlag == 1, create a rectangle that is Xl units tall and 5/3 of Xl units long
 ⤸2
